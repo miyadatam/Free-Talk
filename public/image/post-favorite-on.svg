@@ -1,0 +1,15 @@
+<svg id="favorite_black_24dp" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ff4d4d;
+      }
+    </style>
+  </defs>
+  <path id="パス_77" data-name="パス 77" class="cls-1" d="M0,0H30V30H0Z"/>
+  <path id="パス_78" data-name="パス 78" class="cls-2" d="M15,27.35,13.115,25.6C6.42,19.4,2,15.314,2,10.3A7.155,7.155,0,0,1,9.15,3,7.721,7.721,0,0,1,15,5.773,7.721,7.721,0,0,1,20.85,3,7.155,7.155,0,0,1,28,10.3c0,5.016-4.42,9.1-11.115,15.313Z" transform="translate(0 0)"/>
+</svg>

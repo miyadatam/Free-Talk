@@ -1,0 +1,130 @@
+:root {
+  font-family: 'Noto-Sans-Jp';
+  font-weight: 500;
+  font-size: 16px;
+}
+.flash-message{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9999;
+  text-align: center;
+  background: rgba(0, 191, 255, .9);
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: .05rem;
+}
+.flash-message.danger{
+  background: rgba(239, 70, 68, .9);
+}
+.v-enter-active, .v-leave-actibe {
+  transition: opacity 3s;
+}
+.v-enter, .v-leave-to {
+  opacity: 0;
+  transition: opacity 3s;
+}
+.login-form {
+  margin: 20px auto;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+}
+.login-form h1{
+  font-size: 48px;
+  text-align: center;
+}
+.form-group{
+  width: 90vw;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 50px 40px;
+  box-shadow: #00000036 5px 5px 10px;
+  -webkit-box-shadow: #00000036 5px 5px 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.form-group h1{
+  font-size: 26px;
+  color: #09C289;
+  text-align: center;
+}
+.form-group .input-group{
+  margin-bottom: 30px;
+}
+.form-group .name-group{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.form-group .name-group .input-group{
+  width: calc(50% - 10px);
+}
+.form-group label:not(#keep){
+  font-size: 16px;
+  font-weight: bold;
+}
+.form-group label:not(#keep)::after{
+  content: '\A';
+  white-space: pre;
+}
+input[type="text"], input[type="password"]{
+  all: unset;
+  padding: 2px;
+  border-bottom: #09C289 solid 1px;
+  width: 100%;
+  height: 35px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+  border-width: 3px;
+}
+input[type="text"]:-moz-read-only, input[type="password"]:-moz-read-only{
+  border-color: #999;
+}
+input[type="text"]:read-only, input[type="password"]:read-only{
+  border: none;
+}
+.form-group button{
+  all: unset;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: #09C289;
+}
+.form-group button.back{
+  margin-top: 20px;
+}
+.guidance{
+  margin-top: 15px;
+  color: #1a1a1a;
+  font-weight: normal;
+  text-align: center;
+}
+.guidance a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #09C289;
+}
+.text-danger{
+  color: #e3342f;
+}
+@media screen and (max-width: 768px){
+  .form-group{
+    padding: 10px 20px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
