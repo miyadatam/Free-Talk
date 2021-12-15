@@ -29,8 +29,8 @@ class ComposerSeviceProvider extends ServiceProvider
   public function boot()
   {
     View::composers([
-      FriendsComposer::class => '*',
-      FavoriteFriendsComposer::class => '*',
+      FriendsComposer::class => 'layouts.sub_contents',
+      FavoriteFriendsComposer::class => 'layouts.sub_contents',
     ]);
   }
 }
