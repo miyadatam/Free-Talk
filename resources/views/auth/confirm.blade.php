@@ -9,7 +9,7 @@
 @section('main')
 
 <div class="login-form">
-  <h1>Free Talk</h1>
+  <h1>Free SNS</h1>
   <div class="form-group">
     <h1>登録確認</h1>
     <form action="{{ route('register') }}" method="post">

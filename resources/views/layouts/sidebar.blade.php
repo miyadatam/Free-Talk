@@ -1,6 +1,6 @@
 <nav id="side-bar">
   <h1 class="text-center text-white">
-    <a href="{{ route('user.show', Auth::id()) }}" class="text-white">Free Talk</a>
+    <a href="{{ route('user.show', Auth::id()) }}" class="text-white">Free SNS</a>
   </h1>
   <ul>
     <li @if(request()->path() == 'home') class="current" @endif>

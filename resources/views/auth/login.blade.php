@@ -5,7 +5,7 @@
 @section('main')
 
 <div class="login-form">
-	<h1>Free Talk</h1>
+	<h1>Free SNS</h1>
 	<div class="form-group">
 		<h1>ログイン</h1>
 		@if(session('login_error'))

@@ -9,7 +9,7 @@
 @section('main')
 
 <div class="login-form">
-  <h1>Free Talk</h1>
+  <h1>Free SNS</h1>
   <div class="form-group">
     <h1>登録</h1>
     <form action="{{ route('register.confirm') }}" method="post">
@@ -37,7 +37,7 @@
         @if($errors->has('email'))
         <span class="text-danger">{{ $errors->first('email') }}</span>
         @endif
-        <input id="email" name="email" type="text" placeholder="free@talk.com" value="{{ old('email') }}">
+        <input id="email" name="email" type="text" placeholder="free@sns.com" value="{{ old('email') }}">
       </div>
       <!-- パスワード -->
       <div class="input-group">

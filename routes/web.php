@@ -28,17 +28,6 @@ Route::group(['middleware' => ['auth']], function(){
   // post
   Route::resource('post', 'PostsController', ['only' => ['store', 'destroy']]);
   Route::post('toggle/post/favorite/{post}', 'FavoritesController@togglePostFavorite');
-  // talk
-  Route::resource('/talk', 'TalksController', ['except' => ['index']]);
-  Route::get('/talks/{category_id?}', 'TalksController@index')->name('talk.index');
-  Route::post('/toggle/announce/{talk}', 'AnnouncesController@toggleAnnounce')->name('toggle.announce');
-  // thread
-  Route::post('/thread/{you}', 'ThreadsController@store')->name('thread.store');
-  Route::post('/group', 'ThreadsController@groupStore')->name('group.store');
-  Route::patch('/group', 'ThreadsController@groupUpdate')->name('group.update');
-  Route::post('/thread/hide/{thread}', 'ThreadUsersController@threadHide')->name('thread.hide');
-  // category
-  Route::resource('/category', 'CategoriesController', ['only' => ['store', 'update', 'destroy']]);
   // friend
   Route::get('/friends/{user}', 'FriendsController@index')->name('friend.index');
   Route::post('/toggle/friend/{you}', 'FriendsController@toggleFriend')->name('toggle.friend');
@@ -47,7 +36,6 @@ Route::group(['middleware' => ['auth']], function(){
   Route::get('/users', 'UsersController@index')->name('user.index');
   Route::post('/ajax/users', 'UsersController@getUsers');
   Route::patch('/user/update', 'UsersController@update')->name('user.update');
-  // ※※※※※※※※※※一番下に置く※※※※※※※※※※
   Route::get('/{user_id}/{is_favorite?}', 'UsersController@show')->name('user.show');
 
   // 該当しないURLが入力された時にマイページにリダイレクト
